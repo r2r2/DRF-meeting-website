@@ -155,7 +155,7 @@ DEFAULT_FROM_EMAIL = os.getenv('DEFAULT_FROM_EMAIL')
 # Custom User model
 AUTH_USER_MODEL = 'dates.User'
 
-YANDEX_GEOCODER_API_KEY = '0be44234-e64a-43d6-9662-3a7d36f91c34'
+YANDEX_GEOCODER_API_KEY = os.getenv('YANDEX_GEOCODER_API_KEY')
 
 if DEBUG:
     EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
